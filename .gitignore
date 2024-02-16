@@ -7,7 +7,7 @@ package.json
 # Optional: Specific files
 # *.log
 # *.sqlite
-# .env
+.env
 # .env.local
 # .env.development.local
 # .env.test.local

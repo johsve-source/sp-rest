@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || 3001;
 
-app.listen(port, () => {
-  console.log(`listening on port port`);
+app.listen(port, (err) => {
+  if (err) {
+    console.error(`Error starting server: ${err.message}`);
+  } else {
+    console.log(`Server listening on port ${port}`);
+  }
 });
